@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:16.2
+    restart: on-failure
+    env_file: .database-env
+    ports:
+      - 5432:5432
+    volumes:
+        - ./volumes/:/docker-entrypoint-initdb.d/
+  server:
+    image: golang:1.23-bookworm
+    restart: on-failure
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/app
+    working_dir: /app/executor
+    command: go run ./
