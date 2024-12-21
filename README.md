@@ -1,6 +1,4 @@
-Тестовый проект для MEDODS. 
-
-Выплонен по [CLEAN архитектуре](https://github.com/alfssobsd/notes/blob/master/golang/arch/golang_arch_description.md) 
+Проект ыплонен по [CLEAN архитектуре](https://github.com/alfssobsd/notes/blob/master/golang/arch/golang_arch_description.md) 
 
 Для того, чтобы все работало достаточно запустить docker compose c вылидными файлами окружения:
 
